@@ -1,6 +1,7 @@
 FROM php:7.1-apache
 
 COPY config/VirtualHost.conf /etc/apache2/sites-available/000-default.conf
+COPY .bashrc /root/.bashrc
 
 VOLUME /var/www/html
 WORKDIR /var/www/html
